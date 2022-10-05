@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Foundation Intro</title>
+	<link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+    <style>
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+        }
+    
+        img {
+        max-width: 100%
+        }
+    
+        .image {
+        flex-basis: 40%
+        }
+    
+        .text {
+        font-size: 15px;
+        text-align: center;
+        border: 3px black;
+        }
+        </style>
+    <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><a href="#">Foundation</a></li>
+                <li><a href="#">Dot</a></li>
+                <li><a href="#">ZURB</a></li>
+                <li><a href="#">Com</a></li>
+                <li><a href="#">Slash</a></li>
+                <li><a href="#">Sites</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <!-- `grid-x` represents a row -->
+                
+                <div class="grid-x grid-padding-x">
+                    <a href="fun.html" class="button large-auto" style="background-color: black;">Fun Stuff About Me</a>
+                    <a href="resume.html" class="button large-auto" style="background-color: black;">My Resume</a>
+                    <a href="projects.html" class="button large-auto" style="background-color: black;">Projects</a>
+                    <a href="index.html" class="button large-auto" style="background-color: black;">Intro Page</a>
+                </div>
+                <div class="container">
+                    <div class="image">
+                        <img src="headshot.jpg" alt="Me in Phoenix" style="align-items: right; width: 500px;height: 600px; ">  
+                    </div>
+                    <div class = "text">
+                        <p style="text-align:left">
+                            <b>Experience</b><br>
+                            <ul>
+                                <li>Mortenson Construction: Data Analytics and Insights Intern</li>
+                                    <p>Worked Statistcal Analysis in Python, R, and Excel</p>
+                                <li>University of St. Thomas: Student Manager - Anderson Student Center</li>
+                                    <p>Facilate the processes of the Anderson Student Center</p>
+                                <li>Ace Hardware and Paint</li>
+                                    <p>Help customers to find solutions to their hardware needs</p>
+                            </ul>
+                            <b>School</b><br>
+                            <ul>
+                                <li>University of St. Thomas - Computer Science</li>
+                                    <b>Important Classes</b><br>
+                                        <ul>
+                                            <li>Algorithms</li>
+                                            <li>Data Structures using Object Oriented Design</li>
+                                            <li>Intro to Computer Science</li>
+                                            <li>Statistics I and II/li>
+                                            <li>Information Security</li>
+                                            <li>Object Oriented Programming</li>
+                                        </ul>
+                            </ul>
+                        </p>                          
+                    </div>                           
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
+</body>
+</html>
